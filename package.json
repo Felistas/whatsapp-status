@@ -1,0 +1,26 @@
+{
+  "name": "track-whatsapp-status",
+  "version": "1.0.0",
+  "description": "Track the status of a WhatsApp Message",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felistas/whatsapp-status.git"
+  },
+  "author": "Felistas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felistas/whatsapp-status/issues"
+  },
+  "homepage": "https://github.com/Felistas/whatsapp-status#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13"
+  }
+}
