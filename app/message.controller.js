@@ -12,7 +12,7 @@ const messageBody = {
   Body: "Twilio HQ",
   From: "whatsapp:+14155238886",
   PersistentAction: "geo:37.787890,-122.391664",
-  To: "whatsapp:+254716915775"
+  To: "whatsapp:+254712345678"
 };
 
 const messageController = (req, res) => {
