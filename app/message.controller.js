@@ -27,6 +27,7 @@ const messageController = (req, res) => {
       const messageResponse = {
         msid: response.data.sid,
         mobileNo: response.data.to,
+        whatsAppBody: response.data.body,
         whatsAppStatus: response.data.status
       };
       new Message(messageResponse).save();
@@ -44,12 +45,12 @@ const messageStatus = async (req, res) => {
   if (!message) {
     res.send("Message Not found!");
   } else {
-      await Message.findOneAndUpdate(
-        {
-          msid: req.body.MessageSid
-        },
-        { whatsAppStatus: req.body.MessageStatus }
-      )
+    await Message.findOneAndUpdate(
+      {
+        msid: req.body.MessageSid
+      },
+      { whatsAppStatus: req.body.MessageStatus }
+    );
   }
 };
 
