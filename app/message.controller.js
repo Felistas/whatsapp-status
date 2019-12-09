@@ -9,9 +9,9 @@ const authSID = process.env.ACCOUNT_SID;
 const url = process.env.TWILIO_URL;
 
 const messageBody = {
-  Body: "Twilio HQ",
+  Body: "50% off on burgers 🍔 for you today!",
   From: "whatsapp:+14155238886",
-  PersistentAction: "geo:37.787890,-122.391664",
+  PersistentAction: "geo:-1.232453, 36.878987",
   To: "whatsapp:+254712345678"
 };
 
